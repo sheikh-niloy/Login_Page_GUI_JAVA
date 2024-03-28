@@ -82,7 +82,7 @@ public class Login
         flogin.add(tNotRegistered); 
         flogin.add(bRegister); 
         flogin.add(bExit); 
-        flogin.setSize(1600,500);
+        flogin.setSize(450,500);
         flogin.setLayout(null);
         flogin.setVisible(true);
 
