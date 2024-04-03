@@ -1,4 +1,7 @@
 import javax.swing.*;
+
+import java.awt.*;
+
 public class Login
 {
     private JFrame  flogin;
@@ -13,6 +16,8 @@ public class Login
     private JTextField tUsername; 
     private JPasswordField pPassword;
     private JCheckBox   cRemember;
+    private JFrame Color;
+ 
 
 
     public Login()
@@ -72,6 +77,13 @@ public class Login
         bExit.setText("Exit");
         bExit.setBounds(125,350,150,30);  
 
+        Color color=new Color(0,122,204);
+
+        //allocate new memory for background color
+        // fBackground= new JFrame();
+        // fBackground.setBackground(#1F1F1F);  
+        
+
         flogin.add(lUsername); 
         flogin.add(lPassword); 
         flogin.add(tUsername); 
@@ -83,9 +95,17 @@ public class Login
         flogin.add(tNotRegistered); 
         flogin.add(bRegister); 
         flogin.add(bExit); 
+
+
+        // flogin.getContentPane().setBackground(color);
+
+        flogin.setLayout(new FlowLayout());
+
+
         flogin.setSize(450,500);
         flogin.setLayout(null);
         flogin.setVisible(true);
+        flogin.setResizable(false); //prevent from resizing 
 
     }
 
